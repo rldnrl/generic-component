@@ -7,7 +7,7 @@ function App() {
   const renderEmpty = () => <p>Data is Empty</p>
 
   return (
-    <div className="App">
+    <div>
       <List
         items={bigList}
         renderEmpty={renderEmpty}
