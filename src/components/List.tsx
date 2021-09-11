@@ -34,7 +34,7 @@ type Props<TItem> = {
  * @returns ReactElement
  */
 
-function List<TItem extends { name: string }>({ items, renderEmpty, renderItem }: Props<TItem>): React.ReactElement {
+const List = <TItem extends { name: string }>({ items, renderEmpty, renderItem }: Props<TItem>): React.ReactElement => {
   if (items.length === 0) return renderEmpty()
 
   return (
