@@ -27,6 +27,23 @@ export default List
 
 ```
 
+물론 화살표 함수도 된다.
+
+
+```tsx
+const List = <TItem extends { name: string }>({ items, renderEmpty, renderItem }: Props<TItem>): React.ReactElement => {
+  if (items.length === 0) return renderEmpty()
+
+  return (
+    <ul>
+      {items.map((item) => (
+        <li key={item.name}>{renderItem(item)}</li>
+      ))}
+    </ul>
+  )
+}
+```
+
 이런 고민을 나만 한 게 아니었다.<br />
 
 [React Components as TypeScript Generic Functions](https://javascript.plainenglish.io/react-components-as-typescript-generic-functions-8aa83afff597)
