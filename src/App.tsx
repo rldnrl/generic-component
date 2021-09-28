@@ -4,7 +4,7 @@ import { bigList } from './data'
 import './App.css';
 
 function App() {
-  const renderEmpty = () => <p>Data is Empty</p>
+  const renderEmpty = <p>Data is Empty</p>
 
   return (
     <div>

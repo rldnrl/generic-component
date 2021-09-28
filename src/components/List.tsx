@@ -2,7 +2,7 @@ import React from 'react'
 
 type Props<TItem> = {
   items: TItem[]
-  renderEmpty: () => React.ReactElement
+  renderEmpty: React.ReactElement
   renderItem: (item: TItem) => React.ReactElement
 }
 
@@ -35,7 +35,7 @@ type Props<TItem> = {
  */
 
 const List = <TItem extends { name: string }>({ items, renderEmpty, renderItem }: Props<TItem>): React.ReactElement => {
-  if (items.length === 0) return renderEmpty()
+  if (items.length === 0) return renderEmpty
 
   return (
     <ul>
