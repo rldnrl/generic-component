@@ -31,7 +31,11 @@ export default List
 
 
 ```tsx
-const List = <TItem extends { name: string }>({ items, renderEmpty, renderItem }: Props<TItem>): React.ReactElement => {
+const List = <TItem extends { name: string }>({
+  items,
+  renderEmpty,
+  renderItem
+}: Props<TItem>): React.ReactElement => {
   if (items.length === 0) return renderEmpty()
 
   return (
