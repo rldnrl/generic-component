@@ -50,4 +50,5 @@ const List = <TItem extends { name: string }>({
 
 이런 고민을 나만 한 게 아니었다.<br />
 
-[React Components as TypeScript Generic Functions](https://javascript.plainenglish.io/react-components-as-typescript-generic-functions-8aa83afff597)
+원문 - [React Components as TypeScript Generic Functions](https://javascript.plainenglish.io/react-components-as-typescript-generic-functions-8aa83afff597)
+번역글 - [리액트 컴포넌트를 타입스크립트 제네릭 함수처럼 쓰기](https://ui.toast.com/weekly-pick/ko_20210505)
